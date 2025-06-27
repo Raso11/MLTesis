@@ -1,5 +1,4 @@
 flask
-numpy
+numpy==1.21.6  # Compatible con Python 3.9
 joblib
-tensorflow
-scikit-learn
+tensorflow==2.9.0  # Compatible con Python 3.8 o 3.9
