@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Carga de los modelos
 gb_model = joblib.load("models/best_parkinsons_model.joblib")  # Gradient Boosting
-cnn_model = load_model("models/parkinson_spiral_cnn_82_f1.keras)  # Modelo CNN
+cnn_model = load_model("models/parkinson_spiral_cnn_82_f1.keras")  # Modelo CNN
 
 # Ruta de predicción
 @app.route("/predict", methods=["POST"])
