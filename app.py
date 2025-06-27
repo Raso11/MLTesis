@@ -7,8 +7,8 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 app = Flask(__name__)
 
 # Carga de los modelos
-gb_model = joblib.load("models/gradient_boosting_model.joblib")  # Gradient Boosting
-cnn_model = load_model("models/cnn_model.h5")  # Modelo CNN
+gb_model = joblib.load("models/best_parkinsons_model.joblib")  # Gradient Boosting
+cnn_model = load_model("models/parkinson_spiral_cnn_82_f1.keras)  # Modelo CNN
 
 # Ruta de predicción
 @app.route("/predict", methods=["POST"])
